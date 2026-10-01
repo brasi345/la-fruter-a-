@@ -107,7 +107,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ scrollY }) => {
         }}
       >
         <img
-          src="/src/assets/images/store_local_murcia_1790847737040.jpg"
+          src="/images/store_local_murcia_1790847737040.jpg"
           alt="Fotografía de la entrada e interior de La Frutería en Murcia"
           referrerPolicy="no-referrer"
           className={`w-full h-full object-cover transition-transform duration-[14000ms] ease-out will-change-transform ${

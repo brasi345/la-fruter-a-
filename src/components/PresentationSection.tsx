@@ -133,7 +133,7 @@ export const PresentationSection: React.FC<PresentationSectionProps> = ({ scroll
           >
             <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl border border-white/15 bg-black/40 aspect-[4/3] group transition-all duration-500 hover:shadow-[0_25px_60px_rgba(0,0,0,0.5)] hover:-translate-y-1.5">
               <img
-                src="/src/assets/images/market_crates_fresh_1790847721292.jpg"
+                src="/images/market_crates_fresh_1790847721292.jpg"
                 alt="Expositor de fruta en cajas de madera en La Frutería"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover transition-transform duration-700 ease-out will-change-transform group-hover:scale-108"

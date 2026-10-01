@@ -52,7 +52,7 @@ export interface GalleryPhoto {
 export const REAL_PHOTOS: GalleryPhoto[] = [
   {
     id: "portada-principal",
-    src: "/src/assets/images/store_local_murcia_1790847737040.jpg",
+    src: "/images/store_local_murcia_1790847737040.jpg",
     alt: "Fachada e interior de La Frutería en C. Torre Álvarez, 7, Murcia",
     title: "La Frutería",
     caption: "C. Torre Álvarez, 7 · Murcia",
@@ -60,7 +60,7 @@ export const REAL_PHOTOS: GalleryPhoto[] = [
   },
   {
     id: "expositor-cajas-madera",
-    src: "/src/assets/images/market_crates_fresh_1790847721292.jpg",
+    src: "/images/market_crates_fresh_1790847721292.jpg",
     alt: "Expositor de madera con fresas, nísperos, piñas, mangos y mandarinas en La Frutería",
     title: "Expositor de fruta",
     caption: "Fresas, piñas, nísperos, mangos y mandarinas en cajas de madera",
@@ -68,7 +68,7 @@ export const REAL_PHOTOS: GalleryPhoto[] = [
   },
   {
     id: "expositor-aguacates-hortalizas",
-    src: "/src/assets/images/display_avocados_berries_1790849736414.jpg",
+    src: "/images/display_avocados_berries_1790849736414.jpg",
     alt: "Puesto con aguacates, col kale, arándanos, frambuesas, zanahorias y pitahayas",
     title: "Variedad en mostrador",
     caption: "Aguacates, frutos del bosque, pitahayas y verduras frescas",
@@ -76,7 +76,7 @@ export const REAL_PHOTOS: GalleryPhoto[] = [
   },
   {
     id: "cesta-fruta-preparada",
-    src: "/src/assets/images/gourmet_fruit_box_1790847749926.jpg",
+    src: "/images/gourmet_fruit_box_1790847749926.jpg",
     alt: "Caja de fruta con melón, uvas, plátanos, manzanas y fresas de La Frutería",
     title: "Caja de fruta preparada",
     caption: "Melón, uvas, plátanos, manzanas y fresas con presentación cuidada",
@@ -84,7 +84,7 @@ export const REAL_PHOTOS: GalleryPhoto[] = [
   },
   {
     id: "detalle-citricos",
-    src: "/src/assets/images/hero_citrus_splash_1790847707709.jpg",
+    src: "/images/hero_citrus_splash_1790847707709.jpg",
     alt: "Detalle fotográfico de cítricos y frutas de La Frutería",
     title: "Fruta seleccionada",
     caption: "Cítricos, fresas y fruta fresca de mostrador",
