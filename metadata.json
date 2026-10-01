@@ -1,0 +1,6 @@
+{
+  "name": "La Frutería — Frescura que se nota · Murcia",
+  "description": "Experiencia cinematográfica e interactiva de La Frutería en Murcia. Frutas de máxima calidad, del mercado a tu mesa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
