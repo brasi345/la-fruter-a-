@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Star, MapPin, Clock } from 'lucide-react';
+import { Star, MapPin, Clock, ArrowUpRight } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/content';
 
 interface PresentationSectionProps {
@@ -131,7 +131,14 @@ export const PresentationSection: React.FC<PresentationSectionProps> = ({ scroll
               opacity: inView ? 1 : 0,
             }}
           >
-            <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl border border-white/15 bg-black/40 aspect-[4/3] group transition-all duration-500 hover:shadow-[0_25px_60px_rgba(0,0,0,0.5)] hover:-translate-y-1.5">
+            <a
+              href={BUSINESS_INFO.googleMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Abrir ubicación de La Frutería en Google Maps"
+              aria-label="Abrir ubicación de La Frutería en Google Maps"
+              className="block relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl border border-white/15 bg-black/40 aspect-[4/3] group transition-all duration-500 hover:shadow-[0_25px_60px_rgba(0,0,0,0.6)] hover:-translate-y-1.5 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#DDA15E]"
+            >
               <img
                 src="/images/market_crates_fresh_1790847721292.jpg"
                 alt="Expositor de fruta en cajas de madera en La Frutería"
@@ -143,20 +150,28 @@ export const PresentationSection: React.FC<PresentationSectionProps> = ({ scroll
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent pointer-events-none" />
               
+              {/* Floating Google Maps indicator badge */}
+              <div className="absolute top-4 right-4 z-10 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white text-xs font-medium opacity-90 group-hover:opacity-100 group-hover:bg-[#142E1F] group-hover:border-[#DDA15E] transition-all shadow-lg">
+                <MapPin className="w-3.5 h-3.5 text-[#DDA15E]" />
+                <span>Ver en Google Maps</span>
+                <ArrowUpRight className="w-3.5 h-3.5 text-stone-300 group-hover:text-white transition-colors" />
+              </div>
+
               <div className="absolute bottom-5 left-5 right-5 sm:bottom-6 sm:left-6 sm:right-6 text-white flex items-end justify-between">
                 <div>
-                  <p className="font-editorial text-lg sm:text-2xl font-medium text-white">
+                  <p className="font-editorial text-lg sm:text-2xl font-medium text-white group-hover:text-[#DDA15E] transition-colors">
                     Expositor de fruta en cajas de madera
                   </p>
-                  <p className="text-xs text-stone-300 mt-0.5">
-                    La Frutería · C. Torre Álvarez, 7
+                  <p className="text-xs text-stone-300 mt-0.5 flex items-center gap-1.5">
+                    <span>La Frutería · C. Torre Álvarez, 7</span>
+                    <span className="text-[#DDA15E] font-medium underline underline-offset-2">· Ver en Maps</span>
                   </p>
                 </div>
                 <span className="text-[11px] uppercase tracking-widest text-[#DDA15E] hidden sm:inline">
                   Murcia
                 </span>
               </div>
-            </div>
+            </a>
           </div>
 
         </div>
